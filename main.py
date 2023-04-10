@@ -16,7 +16,6 @@ def interface():
     window.configure(background = 'grey14')
     style = Style()
     window.title("Bot1A")
-    window.iconbitmap('./assets/teclado.ico')
 
     # Definindo estilos dos botões
     style.configure("TButton", font=("Helvetica", 16), borderwidth=3, height=2, width=10)
@@ -24,7 +23,6 @@ def interface():
     style.configure("Subt.TLabel",font=("Arial", 10) )
 
     #escolhendo qual script rodar
-
     container = Frame(window)
     container.configure(background = 'grey13')
     container.pack(pady=(50))
@@ -52,9 +50,6 @@ def interface():
     progress2 = Progressbar(container3, orient='horizontal', length=145, mode='determinate')
     progress2.pack()
 
-    # window.columnconfigure(0, weight=1)
-    # window.columnconfigure(1, weight=1)
-
     # Executando a função roteirizacao em uma thread separada
     def run_roteirizacao():
         roteirizacao(progress)
@@ -62,7 +57,7 @@ def interface():
         porcentagem(progress)
 
     Button(container2, text="roteirizações", command=lambda: threading.Thread(target=run_roteirizacao).start()).pack()
-    Button(container3, text="porcetagens", command=lambda: threading.Thread(target=run_porcentagem).start()).pack()
+    Button(container3, text="porcentagens", command=lambda: threading.Thread(target=run_porcentagem).start()).pack()
 
     window.mainloop()
 interface()
