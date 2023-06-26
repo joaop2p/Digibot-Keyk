@@ -57,7 +57,7 @@ Escolha o que deseja fazer. Você pode acompanhar o progresso da inserção de t
 
 <h3>Aviso</h3>
 
-<p> Devo advertir que esse software é direcionado as atividades que realizo em trabalho, por isso ele pode não funcionar bem para outros usuários</p>
+<p> Devo advertir que esse software é direcionado as atividades que realizo em trabalho, por isso ele não irá funcionar para outros usuários</p>
 <hr>
 <div>
 <img src="http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge"/>
